@@ -1,0 +1,50 @@
+.section-client {
+    padding-top: 90px;
+    padding-bottom: 94px;
+}
+
+.section-5 {
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    @include font(700, 36px, 1.16, 0.03em);
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 54px;
+}
+
+.section5 {
+    @extend %align;
+    justify-content: center;
+    fill: #AFB1B8;
+    .section-5-link:hover &,
+    .section-5-link:focus & {
+    border-color: var(--header-color);
+    fill: var(--header-color)
+    }
+    &:hover {
+    fill: var(--header-color);
+    }
+    &:focus {
+    fill: var(--header-color);
+    }
+}
+
+.section-5-link {
+    @extend %align;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1;
+    &:hover,
+    &:hover {
+    border-color: var(--header-color);
+    }
+}
+
+.section5-list {
+    @extend %align;
+    justify-content: center;
+    gap: 30px;
+}
