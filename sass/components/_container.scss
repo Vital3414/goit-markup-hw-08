@@ -1,8 +1,16 @@
 .container {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid red; */
     margin: 0 auto;
-    align-items: flex-end;
+    @include telephone {
+        width: 480px;
+    }
+    @include tablet {
+        width: 768px;
+    }
+    @include desctop {
+        width: 1200px;
+    }
 }
