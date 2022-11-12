@@ -2,6 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-color);
+    text-align: center;
 }
 
 .footer-adress {
@@ -10,16 +11,24 @@
 
 .footer-webstudio {
     font-family: "Raleway", sans-serif;
-    @include font(700, 26px, 1.19, 0.03em);
+    @include font(700, 24px, 1.16, 0.03em);
     color: var(--header-color);
+    display: flex;
+    justify-content: center;
+    @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
     margin-bottom: 20px;
     display: inline-block;
+    }
 }
 
 .footer-studio {
     font-family: "Raleway", sans-serif;
-    @include font(700, 26px, 1.19, 0.03em);
+    @include font(700, 24px, 1.16, 0.03em);
     color: var(--hero-text);
+    @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
+    }
 }
 
 .footer-map {
@@ -45,6 +54,8 @@
 }
 
 .footer-text {
+    display: flex;
+    justify-content: center;
     @extend %align;
     font-family: 'Roboto' sans-serif;
     font-style: normal;
@@ -55,13 +66,16 @@
 }
 
 .Webstudio {
-    margin-right: 70px;
+    margin-right: 20px;
 }
 
 .footer-completely {
+    display: inline-block;
+    @include desktop {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
+    }
 }
 
 .footer-links {
@@ -93,6 +107,8 @@
 }
 
 .subscribe-text {
+    display: flex;
+    justify-content: center;
     font-family: 'Roboto' sans-serif;
     font-style: normal;
     @include font(700, 14px, 1.14, 0.03em);

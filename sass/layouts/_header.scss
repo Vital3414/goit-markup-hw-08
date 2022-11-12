@@ -1,19 +1,37 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     border-bottom: 1px solid var(--border);
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }
 
 .navigation__web {
     font-family: "Raleway", sans-serif;
-    @include font(700, 26px, 1.19, 0.03em);
+    @include font(700, 24px, 1.17, 0.03em);
+    width: 134px;
+    height: 28px;
     color: var(--header-color);
-    margin-right: 93px;
+    @include desktop {
+        @include font(700, 26px, 1.19, 0.03em);
+        width: 145px;
+        height: 31px;
+        margin-right: 93px;
+    }
 }
 
 .navigation__studio {
     font-family: "Raleway", sans-serif;
-    @include font(700, 26px, 1.19, 0.03em);
+    @include font(700, 24px, 1.17, 0.03em);
+    width: 134px;
+    height: 28px;
+    @include desktop {
+        @include font(700, 26px, 1.19, 0.03em);
+        width: 145px;
+        height: 31px;
+    }
     color: var(--header-studio-color);
 }
 
@@ -71,8 +89,15 @@
 }
 
 .menu {
+    display: none;
+    @include tablet {
+        display: flex;
+        gap: 50px;
+    }
+    @include desktop {
     display: inline-flex;
     gap: 50px;
+    }
 }
 
 .navigation {

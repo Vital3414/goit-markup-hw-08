@@ -1,15 +1,25 @@
 .section-client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
     padding-top: 90px;
     padding-bottom: 94px;
+    }
 }
 
 .section-5 {
     font-family: 'Roboto' sans-serif;
     font-style: normal;
-    @include font(700, 36px, 1.16, 0.03em);
+    @include font(700, 28px, 1.17, 0.03em);
+    @include desktop {
+        @include font(700, 36px, 1.16, 0.03em);
+    }
     text-align: center;
     color: var(--main-color);
+    margin-bottom: 30px;
+    @include desktop {
     margin-bottom: 54px;
+    }
 }
 
 .section5 {
@@ -32,8 +42,14 @@
 .section-5-link {
     @extend %align;
     justify-content: center;
-    width: 170px;
+    max-width: 210px;
     height: 92px;
+    @include tablet {
+        width: 226px;
+    }
+    @include desktop {
+        width: 170px;
+    }
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: #afb1;
@@ -47,4 +63,18 @@
     @extend %align;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.section-5-list {
+    width: 100%;
+    flex-basis: calc((100% - 30px) / 2);
+    @include tablet {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    @include desktop {
+        flex-basis: calc((100% - 150px) / 6);
+    }
 }

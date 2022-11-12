@@ -27,7 +27,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container header__container menu-nav">
         <nav class="navigation">
           <a class="navigation__web link" href="./index.html"
             >Web<span class="navigation__studio link">Studio</span></a
@@ -66,6 +66,11 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-tel-btn" data-menu-open>
+          <svg class="menu-tel-open" width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-menu-tel"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -178,15 +183,38 @@
           <h2 class="section-4">Наша команда</h2>
           <ul class="hero-section4 list">
             <li class="manufacturers">
-              <img
-                src="./images/images-ihor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/images-ihor.jpg    1x,
+                    ./images/team/images-ihor-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-ihor-tab.jpg    1x,
+                    ./images/team/images-ihor-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-ihor-tel.jpg    1x,
+                    ./images/team/images-ihor-tel-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team/images-ihor.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="border-worker">
-                <h3 class="hero-worker">Ігор Дем'яненко</h3>
-                <p class="hero-position" lang="en">Product Designer</p>
+                <div class="border-worker-hero">
+                  <h3 class="hero-worker">Ігор Дем'яненко</h3>
+                  <p class="hero-position" lang="en">Product Designer</p>
+                </div>
                 <ul class="list-soc list">
                   <li class="link-soc link">
                     <a class="worker-soc-link" href="#">
@@ -226,15 +254,35 @@
               </div>
             </li>
             <li class="manufacturers">
-              <img
-                src="./images/images-olha.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/images-olha.jpg    1x,
+                    ./images/team/images-olha-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-olha-tab.jpg    1x,
+                    ./images/team/images-olha-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-olha-tel.jpg    1x,
+                    ./images/team/images-olha-tel-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img src="./images/team/images-olha.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="border-worker">
-                <h3 class="hero-worker">Ольга Рєпіна</h3>
-                <p class="hero-position" lang="en">Frontend Developer</p>
+                <div class="border-worker-hero">
+                  <h3 class="hero-worker">Ольга Рєпіна</h3>
+                  <p class="hero-position" lang="en">Frontend Developer</p>
+                </div>
                 <ul class="list-soc list">
                   <li class="link-soc link">
                     <a class="worker-soc-link" href="#">
@@ -274,15 +322,38 @@
               </div>
             </li>
             <li class="manufacturers">
-              <img
-                src="./images/images-mykola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/images-mykola.jpg    1x,
+                    ./images/team/images-mykola-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-mykola-tab.jpg    1x,
+                    ./images/team/images-mykola-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-mykola-tel.jpg    1x,
+                    ./images/team/images-mykola-tel-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team/images-mykola.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="border-worker">
-                <h3 class="hero-worker">Микола Тарасов</h3>
-                <p class="hero-position" lang="en">Marketing</p>
+                <div class="border-worker-hero">
+                  <h3 class="hero-worker">Микола Тарасов</h3>
+                  <p class="hero-position" lang="en">Marketing</p>
+                </div>
                 <ul class="list-soc list">
                   <li class="link-soc link">
                     <a class="worker-soc-link" href="#">
@@ -322,15 +393,38 @@
               </div>
             </li>
             <li class="manufacturers">
-              <img
-                src="./images/images-mykhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/images-mykhailo.jpg    1x,
+                    ./images/team/images-mykhailo-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-mykhailo-tab.jpg    1x,
+                    ./images/team/images-mykhailo-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/images-mykhailo-tel.jpg    1x,
+                    ./images/team/images-mykhailo-tel-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team/images-mykhailo.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="border-worker">
-                <h3 class="hero-worker">Михайло Єрмаков</h3>
-                <p class="hero-position" lang="en">UI Designer</p>
+                <div class="border-worker-hero">
+                  <h3 class="hero-worker">Михайло Єрмаков</h3>
+                  <p class="hero-position" lang="en">UI Designer</p>
+                </div>
                 <ul class="list-soc list">
                   <li class="link-soc link">
                     <a class="worker-soc-link" href="#">
@@ -429,7 +523,7 @@
             >Web<span class="footer-studio">Studio</span></a
           >
           <address class="footer-adress">
-            <ul class="list">
+            <ul class="footer-list list">
               <li>
                 <a
                   class="footer-map link"
@@ -583,7 +677,6 @@
         </button>
       </div>
     </div>
-    -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

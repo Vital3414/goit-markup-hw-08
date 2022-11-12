@@ -1,5 +1,13 @@
 .manufacturers {
     background-color: var(--hero-text);
+    @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+    flex-basis: calc((100% - 90px) / 4);
+    gap: 30px;
+    text-align: center;
+    }
 }
 
 .border-worker {
@@ -7,6 +15,14 @@
     border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.border-worker-hero {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-worker {
