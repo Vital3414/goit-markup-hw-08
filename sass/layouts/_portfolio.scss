@@ -37,25 +37,50 @@
 
 .portfolio__section {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: start;
+    margin-bottom: 40px;
+    @include tablet {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+        flex-basis: calc((100% - 60px) / 2);
+    }
+    @include desktop {
+        margin-bottom: 50px;
+    }
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    width: 100%;
 }
 
 .portfolio {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 
 .gallery__item {
-    width: calc((100% - 60px) / 3);
+    @include tablet {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
     position: relative;
+    }
+}
+
+.gallery__images {
+    width: 100%;
 }
 
 .gallery__images:hover {
