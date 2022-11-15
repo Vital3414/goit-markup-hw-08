@@ -42,7 +42,7 @@
 .section-5-link {
     @extend %align;
     justify-content: center;
-    max-width: 210px;
+    width: 210px;
     height: 92px;
     @include tablet {
         width: 226px;

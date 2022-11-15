@@ -14,7 +14,6 @@
     }
     @include desktop {
         display: block;
-    padding-top: 94px;
     padding-bottom: 94px;
     }
 }
@@ -58,27 +57,21 @@
 }
 
 .hero-section4 {
-    // width: 100%;
-    // height: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; 
-    padding-right: 15px;
-    padding-left: 15px;
+    gap: 30px;
 }
 
 .section-4 {
     font-family: "Roboto", sans-serif;
     @include font(700, 28px, 1.17, 0.03em);
+    margin-bottom: 30px;
     @include desktop {
         @include font(700, 36px, 1.17, 0.03em);
+        margin-bottom: 50px;
     }
     text-align: center;
     color: var(--main-color);
-}
-
-.section-4 {
-    margin-bottom: 50px;
 }
 
 .hero-section-4 {

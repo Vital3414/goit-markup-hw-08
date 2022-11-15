@@ -55,7 +55,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .modal-btn-text, .check-text span, .check-text, .modal-btn, .footer-soc-list, .footer-links, .footer-text, .section5-list, .section-5-link, .section5, .worker-soc-link, .item-container, .menu__mail,
@@ -91,8 +90,27 @@ img {
   width: 100vw;
   height: 100vh;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 15px;
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d4d4d4;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--header-color);
+  border-radius: 8px;
+  border: 3px solid #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hero-btn-focus);
 }
 
 .backdrop {
@@ -484,6 +502,17 @@ img {
   }
 }
 
+.main-text {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .main-text {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .hero-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -521,6 +550,7 @@ img {
 
 .hero-section {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tel-2x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tel.jpg);
   max-width: 1600px;
   height: 400px;
   background-repeat: no-repeat;
@@ -536,12 +566,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk-2x.jpg);
     height: 600px;
   }
 }
@@ -553,17 +585,12 @@ img {
 }
 
 .hero-list {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 15px;
-  padding-left: 15px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   .hero-list {
-    padding-top: 94px;
     padding-bottom: 0;
   }
 }
@@ -635,7 +662,6 @@ img {
 @media screen and (min-width: 1200px) {
   .section-3 {
     display: block;
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -689,8 +715,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .section-4 {
@@ -699,6 +723,7 @@ img {
   font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--main-color);
 }
@@ -708,11 +733,8 @@ img {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
-}
-
-.section-4 {
-  margin-bottom: 50px;
 }
 
 .hero-section-4 {
@@ -848,7 +870,7 @@ img {
 
 .section-5-link {
   justify-content: center;
-  max-width: 210px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -971,6 +993,18 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-tel);
+  display: block;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-tel {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tel {
+    margin-bottom: 0;
+  }
 }
 
 .footer-text {
@@ -992,9 +1026,6 @@ img {
   }
 }
 
-.Webstudio {
-  margin: 0 0 60px 0;
-}
 @media screen and (min-width: 1200px) {
   .Webstudio {
     margin-right: 82px;
@@ -1038,7 +1069,6 @@ img {
 
 .footer-soc {
   gap: 30px;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-soc {
@@ -1046,6 +1076,9 @@ img {
   }
 }
 
+.container-wrap {
+  margin: 0 0 60px 0;
+}
 @media screen and (min-width: 768px) {
   .container-wrap {
     display: flex;
@@ -1058,6 +1091,7 @@ img {
   .container-wrap {
     padding-right: 0;
     padding-left: 0;
+    margin: 0;
   }
 }
 

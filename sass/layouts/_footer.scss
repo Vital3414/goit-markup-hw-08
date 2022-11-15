@@ -53,6 +53,14 @@
     font-family: "Roboto", sans-serif;
     @include font(400, 14px, 1.71, 0.03em);
     color: var(--footer-tel);
+    display: block;
+    margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-bottom: 0;
+    }
 }
 
 .footer-text {
@@ -71,7 +79,6 @@
 }
 
 .Webstudio {
-    margin: 0 0 60px 0;
     @include desktop {
         margin-right: 82px;
         margin-bottom: 0;
@@ -115,13 +122,13 @@
 
 .footer-soc {
     gap: 30px;
-    margin-bottom: 60px;
     @include desktop {
         margin-bottom: 0;
     }
 }
 
 .container-wrap {
+    margin: 0 0 60px 0;
     @include tablet {
     display: flex;
     padding-right: 76px;
@@ -131,6 +138,7 @@
     @include desktop {
         padding-right: 0;
         padding-left: 0;
+        margin: 0;
     }
 }
 
