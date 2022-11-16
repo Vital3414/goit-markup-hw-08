@@ -54,13 +54,6 @@
     @include font(400, 14px, 1.71, 0.03em);
     color: var(--footer-tel);
     display: block;
-    margin-bottom: 60px;
-    @include tablet {
-        margin-bottom: 0;
-    }
-    @include desktop {
-        margin-bottom: 0;
-    }
 }
 
 .footer-text {
@@ -79,6 +72,10 @@
 }
 
 .Webstudio {
+    margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 0;
+    }
     @include desktop {
         margin-right: 82px;
         margin-bottom: 0;

@@ -549,7 +549,6 @@ img {
 }
 
 .hero-section {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tel-2x.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tel.jpg);
   max-width: 1600px;
   height: 400px;
@@ -564,17 +563,30 @@ img {
   background-color: #c4c4c4;
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tel-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk-2x.jpg);
     height: 600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -994,17 +1006,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-tel);
   display: block;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer-tel {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-tel {
-    margin-bottom: 0;
-  }
 }
 
 .footer-text {
@@ -1026,6 +1027,14 @@ img {
   }
 }
 
+.Webstudio {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .Webstudio {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .Webstudio {
     margin-right: 82px;
